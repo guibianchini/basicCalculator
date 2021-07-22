@@ -1,0 +1,39 @@
+#calculadora {
+    text-align: center;
+}
+
+#visor{
+    background-color: #f5f;
+    text-align: inherit;
+    padding: 20px;
+    margin: 0 30%;
+}
+
+#visor #result {
+    font-size: 15px;
+}
+
+#visor #calc {
+    font-size: 30px;
+}
+
+#num{
+    background-color: red;
+    color: white;
+    padding: 20px 40px;
+    text-align: inherit;
+    font-size: 40px;
+    
+}
+
+#operator {
+    background-color: black;
+    color: white;
+    padding: 5px 40px;
+    text-align: inherit;
+    font-size: 20px;
+}
+
+#line {
+    margin: 5px;
+}

@@ -1,33 +1,40 @@
-#calculadora {
+#calculator {
     text-align: center;
+    background-color: #783A0D;
 }
 
 #visor{
-    background-color: #f5f;
+    background-color: #F9A366;
     text-align: inherit;
     padding: 20px;
-    margin: 0 30%;
+    margin: 0 7%;
+    border-radius: 10px;
 }
 
 #visor #result {
     font-size: 15px;
 }
 
-#visor #calc {
-    font-size: 30px;
+button{
+    border-radius:10px;
 }
 
+#visor #calc {
+    font-size: 50px;
+}
+
+
 #num{
-    background-color: red;
+    background-color: #C45E16;
     color: white;
-    padding: 20px 40px;
+    padding: 2% 4%;
     text-align: inherit;
     font-size: 40px;
     
 }
 
 #operator {
-    background-color: black;
+    background-color: #F7771B;
     color: white;
     padding: 5px 40px;
     text-align: inherit;
@@ -37,3 +44,28 @@
 #line {
     margin: 5px;
 }
+
+@media screen and (max-width: 800px) {
+    #calculator{
+        margin-top: 5%;
+    }
+    #operator{
+        width:33.333%;
+        height: auto;
+        text-align:center;
+        font-size: 1.3em;
+        border-radius: 20px;
+    }
+    #line{
+        display: inline-block;
+    }
+
+    #visor #calc {
+      font-size: 250%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    #num{
+        flex: 0 0 0 33.333333%;
+        padding: 20px 40px;
+        font-size: 20px;
+    }
+  }

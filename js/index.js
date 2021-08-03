@@ -65,7 +65,7 @@ document.querySelectorAll('#num, #operator').forEach(
                     imprimirOperadores(e.value);
                 }
                 visorContas.innerHTML = conta.join('');
-                visorResultado.innerHTML = `R: ${resultado}`;
+                visorResultado.innerHTML = `${resultado}`;
             };
         }
     });

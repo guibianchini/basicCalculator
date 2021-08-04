@@ -4,3 +4,8 @@ Projeto de desenvolvimento de uma calculadora para colocar em prática conteúdo
 Objetivo: Desenvolver uma calculadora com operadores artiméticos simples e com todos os tratamentos de possíveis erros de sua utilização.
 
 Fique à vontade para utilizar e ajudar no desenvolvimento desta aplicação.
+
+Release 0.1.0
+---
+* Operações funcionando com apenas 2 números;
+* **NÃO** selecionar dois operadores em seguida;

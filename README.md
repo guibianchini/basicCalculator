@@ -9,3 +9,8 @@ Release 0.1.0
 ---
 * Operações funcionando com apenas 2 números;
 * **NÃO** selecionar dois operadores em seguida;
+
+Release 0.1.0
+---
+* Adição de Responsividade
+* Paleta de cores Monocromática

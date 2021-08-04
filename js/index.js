@@ -33,6 +33,8 @@ function finalizarConta(valor) {
         }
     }
     conta.filter(e => typeof e === 'number').length > 1 ? resultado = conta.pop() : resultado = resultado;
+    if(isNaN(resultado) === true)
+        resultado = 'Err';
     limparVisor();
 }
 
@@ -43,15 +45,21 @@ function limparVisor() {
     conta = [0];
 }
 
+//Limpa o resultado da Calculadora
+function limparResultado() {
+    resultado = null;
+    visorResultado.innerHTML = "";
+}
+
 
 let numeroAtual;
 let conta = [];
 let posNum = 0;
-let resultado = 0;
+let resultado = null;
 const visorContas = document.getElementById('calc');
 const visorResultado = document.getElementById('result');
 
-document.querySelectorAll('#num, #operator').forEach(
+document.querySelectorAll('#num, #op').forEach(
     (e) => {
         if (e.id) {
             e.onclick = () => {
@@ -61,11 +69,13 @@ document.querySelectorAll('#num, #operator').forEach(
                     finalizarConta(e.value);
                 } else if (e.value === 'clean') {
                     limparVisor();
+                    limparResultado();
                 } else {
                     imprimirOperadores(e.value);
                 }
                 visorContas.innerHTML = conta.join('');
-                visorResultado.innerHTML = `${resultado}`;
+                if(resultado !== null)
+                    visorResultado.innerHTML = `${resultado}`;  
             };
         }
     });

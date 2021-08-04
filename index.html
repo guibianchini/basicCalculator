@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
-<header>
+  <header>
     <title>Basic Calculator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css">
-</header>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </header>
 
-<body id="calculator">
-    <div id="visor">
-        <div id="result"></div>
-        <div id="calc">
-            0
-        </div>
+  <body class="calculator">
+    <div class="visor">
+      <div id="result"></div>
+      <div id="calc">0</div>
     </div>
-    <div id="line">
-        <button id="operator" value="+">+</button>
-        <button id="operator" value="-">-</button>
-        <button id="operator" value="/">/</button>
-        <button id="operator" value="*">*</button>
-        <button id="operator" value="=">=</button>
-        <button id="operator" value="clean">CE</button>
-
-    </div>
-    <div id="line">
+    <div class="buttons">
+      <div class="operators">
+        <button id="op" value="+">+</button>
+        <button id="op" value="-">-</button>
+        <button id="op" value="/">/</button>
+        <button id="op" value="*">*</button>
+        <button id="op" value="=">=</button>
+        <button id="op" value="clean">CE</button>
+      </div>
+      <div class="numbers">
         <button id="num" value="1">1</button>
         <button id="num" value="2">2</button>
         <button id="num" value="3">3</button>
-    </div>
-    <div id="line">
         <button id="num" value="4">4</button>
         <button id="num" value="5">5</button>
         <button id="num" value="6">6</button>
-
-    </div>
-    <div id="line">
         <button id="num" value="7">7</button>
         <button id="num" value="8">8</button>
         <button id="num" value="9">9</button>
-    </div>
-    <div id="line">
         <button id="num" value="0">0</button>
+      </div>
     </div>
-
-</body>
-<footer>
-
-</footer>
-<script src="js/index.js"></script>
-
+  </body>
+  <footer>
+    <div class="footer">
+      <a href="https://github.com/guibianchini" target="_blank">
+        Guilherme Bianchini @ 2021
+      </a>
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
 </html>

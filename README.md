@@ -14,3 +14,9 @@ Release 0.1.1
 ---
 * Adição de Responsividade
 * Paleta de cores Monocromática
+
+Release 0.1.2
+---
+* Adição do Rodapé
+* Ajuste do Layout dos Botões
+* Tratamento de erro NaN
